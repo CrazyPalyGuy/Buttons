@@ -1,6 +1,6 @@
 // Global Variables
 float buttonX, buttonY, buttonWidth, ButtonHeight;
-color buttonColour, yellow=#F3FC03, purple=#FC03FC, white=#FFFFFF, reset=white, blue=#041981;
+color buttonColour, purple=#FC03FC, white=#FFFFFF, reset=white, blue=#041981;
 
 void setup() {
   fullScreen();
@@ -15,7 +15,7 @@ void draw() {
   background(white);
   //println(mouseX, mouseY);
   if ( mouseX >= buttonX && mouseY >= buttonY && mouseX <= buttonX+buttonWidth && mouseY <= buttonY+ButtonHeight ) {
-    buttonColour = yellow;
+    buttonColour = blue;
   } else {
     buttonColour = purple;
   }//End if Button Colour
